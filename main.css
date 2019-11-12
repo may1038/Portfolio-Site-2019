@@ -18,6 +18,10 @@
   margin-bottom: 10rem;
 }
 
+.marginToBottomContentPortrait {
+  margin-bottom: 6rem;
+}
+
 .workHeader {
   font-size: 4rem;
 }

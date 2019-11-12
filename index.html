@@ -16,8 +16,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html"><strong>Tyler</strong>May</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -32,18 +32,26 @@
       </ul>
     </div>
   </nav>
+
+  <div class="fixed-bottom">
+    <div class="row float-right">
+      <div class="col-md-10">
+        <h2 class="col-md-6 mb-4 mr-3"><a href="#" onclick="topFunction()" id="top"><i class="fas fa-lg fa-arrow-alt-circle-up"></i></a></h2>
+      </div>
+    </div>
+  </div>
   <!-- Home -->
   <div class="container-fluid">
     <!-- Content here -->
     <section>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Lets Build Cool Shit.</h1>
+          <h1 class="display-4">Build Cool Shit.</h1>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <h3 class="page-header text-center">Im glad you're here. Enjoy checking out my UX/UI work and let's connect!</h3>
+          <h3 class="page-header text-center">Im glad you're here. Enjoy checking out my work and let's connect.</h3>
         </div>
       </div>
       <div class="row justify-content-center marginToBottom">
@@ -55,11 +63,12 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <!-- TP work -->
-          <h1 class="page-header text-center mb-5 workHeader"><strong>TouchPoint</strong></h1>
+          <h1 class="page-header text-center mb-5 workHeader"><strong>UX/UI Design</strong></h1>
           <div class="row marginToBottomContent">
             <div class="col align-self-center">
-              <h1 class="mb-3">App redesign</h1>
-              <p class="">TouchPoint is a mobile application that is assigned to low risk offenders that have court mandated monitoring.</p>
+              <h1 class="mb-3"><strong>TouchPoint</strong></h1>
+              <h2>App redesign</h2>
+              <p class="">TouchPoint is a mobile application assigned to low risk offenders that have court mandated monitoring.</p>
               <div class="">
                 <a href="#" class="btn btn-primary">Check It Out</a>
               </div>
@@ -69,20 +78,22 @@
             </div>
           </div>
           <!-- 24/7 work -->
-          <h1 class="page-header text-center mb-5 workHeader"><strong>SCRAM 24/7</strong></h1>
+          <!-- <h1 class="page-header text-center mb-5 workHeader"><strong>SCRAM 24/7</strong></h1> -->
           <div class="row marginToBottomContent">
             <div class="col">
               <img src="./img/24x7.jpg" alt="24/7 Photo" width="800" height="450">
             </div>
             <div class="col align-self-center">
-              <h1 class="mb-3">Client management software</h1>
+              <h1 class="mb-3"><strong>SCRAM 24/7</strong></h1>
+              <h2>Client management software</h2>
               <p class="">24/7 gives officers the ability to manage all of there clients in a clean, organized and intuitive interface.</p>
               <div class="">
                 <a href="#" class="btn btn-primary">Check It Out</a>
               </div>
             </div>
           </div>
-          <h1 class="page-header text-center mb-5 workHeader"><strong>Research</strong></h1>
+          <!-- Research -->
+          <h1 class="page-header text-center mb-5 workHeader"><strong>UX Research</strong></h1>
           <div class="row marginToBottomContent">
             <div class="col">
               <img src="./img/usabilityTesting.jpg" class="mb-3 ml-3" alt="TouchPoint Photo" width="400" height="250">
@@ -109,6 +120,7 @@
               </div>
             </div>
           </div>
+          <!-- Things I use everyday -->
           <div class="marginToBottomContent">
             <h1 class="page-header text-center mt-5">Things I use everyday</h1>
             <ul class="list-unstyled list-inline d-flex justify-content-around mt-5">
@@ -147,7 +159,7 @@
             </ul>
           </div>
           <!-- Lets Connect -->
-          <div class="row marginToBottomContent d-flex justify-content-center">
+          <div class="row marginToBottomContentPortrait d-flex justify-content-center">
             <div class="col d-flex justify-content-center">
               <img src="./img/portrait.jpg" alt="portrait photo" width="500" height="325">
             </div>
@@ -171,7 +183,29 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+
+    $('#top').hide();
+
+    var mybutton = document.getElementById("top");
+
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 <footer>
   <div class="row justify-content-center align-items-center" id="footer">
