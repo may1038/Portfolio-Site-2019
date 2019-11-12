@@ -1,0 +1,65 @@
+.navbar {
+  padding: 1.5rem 1rem;
+}
+
+.jumbotron {
+  height: 600px;
+}
+
+.page-header {
+  margin: 2rem;
+}
+
+.marginToBottom {
+  margin-bottom: 1rem;
+}
+
+.marginToBottomContent {
+  margin-bottom: 10rem;
+}
+
+.workHeader {
+  font-size: 4rem;
+}
+
+.footerNavItem {
+  text-decoration: none;
+  color: #fff;
+}
+
+.iconText {
+  color: #212529;
+}
+
+#JSBrandColor {
+  color: #F4E051;
+}
+
+#bootstrapBrandColor {
+color: #563d7c;
+}
+
+#adobeBrandColor {
+  color: #ff0000;
+}
+
+#html5BrandColor {
+  color: #ff5900;
+}
+
+#footer {
+  height: 10rem;
+  background-color: #343a40;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

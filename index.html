@@ -1,36 +1,171 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>Test</title>
-  </head>
-  <body>
+<!doctype html>
+<html lang="en">
 
-    <div class="navBar">
-      <nav>
-        <div class="">
-          <h1>One</h1>
-          <h1>Two</h1>
-          <h1>Three</h1>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/19cb073cd3.js" crossorigin="anonymous"></script>
+  <title>Tyler May</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><strong>Tyler</strong>May</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pull-right" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="connect.html">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home -->
+  <div class="container-fluid">
+    <!-- Content here -->
+    <section>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Lets Build Cool Shit.</h1>
         </div>
-      </nav>
-    </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <h3 class="page-header text-center">Im glad you're here. Enjoy checking out my UX/UI work and let's connect!</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center marginToBottom">
+        <div class="col-md-1">
+          <!-- <button href="#connectBtn" type="button" class="btn btn-lg btn-dark" data-toggle="tab" role="tab" id="connectWithMeBtn">Connect</button> -->
+          <a href="connect.html" class="btn btn-lg btn-dark">Let's Connect</a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <!-- 24/7 work -->
+          <h1 class="page-header text-center mb-5 workHeader">TouchPoint Application</h1>
+          <div class="row marginToBottomContent">
+            <div class="col align-self-center">
+              <h1 class="mb-3">High-fidelity prototype</h1>
+              <p class="">TouchPoint is a mobile application that is assigned to low risk offenders that have court mandated monitoring.</p>
+              <div class="">
+                <a href="#" class="btn btn-primary">Check It Out</a>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./img/TPnew.jpg" alt="TouchPoint Photo" width="800" height="500">
+            </div>
+          </div>
+          <!-- 24/7 work -->
+          <h1 class="page-header text-center mb-5 workHeader">SCRAMsystems 24/7</h1>
+          <div class="row marginToBottomContent">
+            <div class="col">
+              <img src="./img/24:7Photo.jpg" alt="24/7 Photo" width="800" height="450">
+            </div>
+            <div class="col align-self-center">
+              <h1 class="mb-3">Client management software</h1>
+              <p class="">24/7 gives officers the ability to manage all of there clients in a clean, organized and intuitive interface.</p>
+              <div class="">
+                <a href="#" class="btn btn-primary">Check It Out</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="page-header text-center">What I do</h3>
+          <ul class="list-unstyled list-inline d-flex justify-content-around mt-5">
+            <li class="list-inline-item">Usability Testing</li>
+            <li class="list-inline-item">UI Design</li>
+            <li class="list-inline-item">UX Design</li>
+          </ul>
+          <h3 class="page-header text-center">Tools I use everyday</h3>
+          <ul class="list-unstyled list-inline d-flex justify-content-around mt-5">
+            <li class="list-inline-item" id="adobeBrandColor"><i class="fab fa-5x fa-adobe"></i>
+              <div class="text-center iconText">
+                Adobe
+              </div>
+            </li>
+            <li class="list-inline-item"><i class="fab fa-5x fa-github"></i>
+              <div class="text-center iconText">
+                GitHub
+              </div>
+            </li>
+            <li class="list-inline-item" id="html5BrandColor"><i class="fab fa-5x fa-html5"></i>
+              <div class="text-center iconText">
+                HTML5
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline d-flex justify-content-around mt-5">
+            <li class="list-inline-item" id="bootstrapBrandColor"><i class="fab fa-5x fa-bootstrap"></i>
+              <div class="text-center iconText">
+                Bootstrap
+              </div>
+            </li>
+            <li class="list-inline-item" id="JSBrandColor"><i class="fab fa-5x fa-js-square"></i>
+              <div class="text-center iconText">
+                jQuery
+              </div>
+            </li>
+            <li class="list-inline-item">Last Item</li>
+          </ul>
+          <!-- Lets Connect -->
+          <div class="row marginToBottomContent">
+            <div class="">
+              <div class="col">
+                <img src="./img/portrait.jpg" alt="portrait photo" width="500" height="325">
+              </div>
+            </div>
+            <div class="col align-self-center">
+              <p class="">A blurb about me and how awesome and creative I am.</p>
+              <div class="">
+                <a href="#" class="btn btn-dark">Let's Connect</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-5">
+            <a href="#" class="btn btn-lg btn-danger">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <div class="div1">
-      <span>This is a Test</span>
-      <span>Test test test</span>
-    </div>
-    <br>
-    <div class="">
-      <span class="blueText">This text is blue!</span>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript"></script>
+</body>
+<footer>
+  <div class="row justify-content-center align-items-center" id="footer">
+    <h1><strong>Tyler</strong>May</h1>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link footerNavItem" href="#">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footerNavItem" href="#">My Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footerNavItem" href="#">Connect</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footerNavItem" href="#">LinkedIn</a>
+      </li>
+    </ul>
+    <h2>Denver, CO</h2>
+  </div>
+</footer>
 
-      <form class="form1" action="index.html" method="post">
-        <input class="input" type="text" name="" value="">
-        <input class="btn" type="button" name="" value="Submit">
-      </form>
-    </div>
-
-
-  </body>
 </html>
