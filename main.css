@@ -11,7 +11,7 @@
 }
 
 .marginToBottom {
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 .marginToBottomContent {
@@ -27,12 +27,20 @@
   color: #fff;
 }
 
+.footerNavlink:hover {
+  color: grey;
+}
+
 .iconText {
   color: #212529;
 }
 
 .whatIDoIconSet {
   color: #b6b6b6;
+}
+
+#denverCO {
+  font-weight: lighter;
 }
 
 #CSSBrandColor {
@@ -56,8 +64,8 @@ color: #563d7c;
 }
 
 #footer {
-  height: 10rem;
-  background-color: #343a40;
+  height: 20rem;
+  background-color: #545658;
 }
 
 /* Small devices (landscape phones, 576px and up) */
