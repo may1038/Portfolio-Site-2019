@@ -18,6 +18,10 @@
   margin-bottom: 10rem;
 }
 
+.marginToBottomAboutMe {
+  margin-bottom: 5rem;
+}
+
 .marginToBottomContentPortrait {
   margin-bottom: 6rem;
 }
@@ -68,7 +72,7 @@ color: #563d7c;
 }
 
 #footer {
-  height: 20rem;
+  height: 10rem;
   background-color: #545658;
 }
 

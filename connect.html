@@ -35,68 +35,72 @@
   <!-- Home -->
   <div class="container-fluid marginToBottomContent">
     <!-- Content here -->
-    <div class="col-md-3 alert alert-success" role="alert" id="connectAlert">
+    <div class="col-md-12 alert alert-success" role="alert" id="connectAlert">
       <i class="fas fa-check-circle text-success mr-1"></i><strong>Success!</strong> Thanks for reaching out!
     </div>
     <section>
       <div class="row justify-content-center mt-5">
         <h1>Let's Connect</h1>
       </div>
-      <div class="row justify-content-center mt-2">
-        <p>If you've made it this far...</p>
+      <div class="row mt-2">
+        <div class="col-md-6 offset-md-3 mt-4">
+          <p>I would love to hear from you. Fill out the form below and I'll reach out as soon as possible or reach me directly at maymtyler@gmail.com</p>
+        </div>
       </div>
-      <div class="row justify-content-center mt-5">
+      <div class="row justify-content-center mt-2">
         <form class="col-md-6">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label>Name</label>
-              <input type="text" class="form-control" placeholder="First Name">
+              <label>Name *</label>
+              <input type="text" class="form-control">
+              <label>First</label>
             </div>
             <div class="form-group col-md-6 mt-2">
               <label></label>
-              <input type="text" class="form-control" placeholder="Last Name">
+              <input type="text" class="form-control">
+              <label>Last</label>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label>Email</label>
-              <input type="email" class="form-control" placeholder="Email">
+              <label>Email *</label>
+              <input type="email" class="form-control">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label>Subject</label>
-              <input type="text" class="form-control" placeholder="Company Name">
+              <label>Subject *</label>
+              <input type="text" class="form-control">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label>Message</label>
-              <textarea type="text" class="form-control" placeholder="Message"></textarea>
+              <label>Message *</label>
+              <textarea type="text" class="form-control" rows="4"></textarea>
             </div>
           </div>
-          <button type="submit" class="btn btn-lg btn-success float-right" id="connectBtn">Connect</button>
+          <a href="#" class="btn btn-lg btn-success float-right" id="connectBtn">Connect</a>
         </form>
       </div>
     </section>
   </div>
 
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript">
+    $('#connectAlert').hide();
+
     $('#connectBtn').click(function() {
-      $('#connectAlert').slideDown().delay(5000).slideUp();
-      return false;
+      $('#connectAlert').slideDown().delay(3500).slideUp();
     });
   </script>
 </body>
 <footer>
   <div class="row justify-content-center align-items-center" id="footer">
     <div class="col-md-4 text-center">
-      <h2 class="mb-5 footerNavItem"><strong>Tyler</strong>May</h2>
-      <ul class="nav justify-content-around mb-5">
+      <ul class="nav justify-content-around mb-3">
         <li class="nav-item">
           <a class="nav-link footerNavItem footerNavlink" href="aboutme.html">About Me</a>
         </li>
